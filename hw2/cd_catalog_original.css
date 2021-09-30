@@ -1,0 +1,165 @@
+papaer {
+    background-color: white;
+    width: 100%;
+}
+
+title {
+    font-size: 30pt;
+    color: blue;
+    font-weight: bold;
+    font-family: verdana;
+    text-align: left;
+}
+
+schedule{
+    display: block;
+    font-size: 15pt;
+    color: cornflowerblue;
+    font-weight: bold;
+    font-weight: verdana;
+    text-align: right;
+    margin-right: 10pt;
+}
+
+to{
+    display: block;
+    font-size: 15pt;
+    color: black;
+    font-weight: bold;
+    font-weight: verdana;
+    margin-left: 30pt;
+    margin-top: 30pt;
+}
+
+phone{
+    display: block;
+    font-size: 15pt;
+    color: black;
+    font-weight: bold;
+    font-weight: verdana;
+    margin-left: 30pt;
+    margin-bottom: 30pt;
+    background-color: yellow;
+    width: 130px;
+}
+phone{
+    position: relative;
+    animation: mymove 5s infinite; 
+}
+@keyframes mymove {
+    0% {left: 0px;}
+    50% {left: 200px;}
+    100% {left: 0px;}
+}
+
+from{
+    display: block;
+    font-size: 15pt;
+    color: black;
+    font-weight: bold;
+    font-weight: verdana;
+    margin-left: 30pt;
+    margin-bottom: 50pt;
+}
+
+sub{
+    font-weight: bold;
+    font-weight: verdana;
+}
+
+sub::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+sub_title1{
+    display: block;
+    font-size: 20pt;
+    color: cornflowerblue;
+    background-color: gold;
+    margin-left: 30pt;
+    float: left;
+    width: 380px;
+    height: 40px;
+    transition: width 2s, height 2s, transform 2s; 
+}
+sub_title1:hover {
+    transform: rotate(180deg);
+}
+
+
+sub_title2{
+    display: block;
+    font-size: 20pt;
+    font-style: italic;
+    color: darkorchid;
+    background-color: lightgray;
+    text-align: center; 
+    border: 2px solid darkmagenta;
+    float: right;
+    margin-right: 500pt;
+    box-shadow: 7px 7px 15px rgb(107, 38, 121);
+    width: 380px;
+    height: 40px;
+}
+sub_title2:hover {
+    transform: rotate(180deg);
+}
+
+cd {
+    display: flex;
+    margin-bottom: 30pt;
+    margin-left: 30pt;
+    margin-top: 50pt;
+    text-align: center;
+    font-size: 13pt;
+
+}
+
+cd::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+body1 {
+    display: block;
+    color: #000000;
+    padding-left: 10pt;
+    padding-right: 20pt;
+    width: 450px;
+    height: 80pt;
+}
+
+
+body2 {
+    display: block;
+    width: 450px;
+    height: 80pt;
+    color: #000000;
+    border-left: 2px solid blue;
+    padding-left: 10pt;
+    padding-right: 20pt;
+}
+
+body3 {
+    display: block;
+    color: #000000;
+    width: 450px;
+    height: 80pt;
+    margin-right:30pt;
+    border-left: 2px solid blue;
+    padding-left: 10pt;
+    padding-right: 20pt;
+}
+
+
+end{
+    clear: both;
+    font-size: 30pt;
+    color: blue;
+    font-weight: bold;
+    font-family: verdana;
+    text-align: left;
+}

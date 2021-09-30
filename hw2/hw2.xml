@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type = "text/css" href = "cd_catalog_original.css"?>
+<paper>
+  <title> Send Text to Eugene </title>
+
+  <schedule> Meeting Schedule </schedule>
+
+  <to>To: Eugene</to>
+  <phone>010-123-4567</phone>
+  <from>From: Hong, Gil-Dong</from>
+
+  <sub>
+    <sub_title1>Please, Interprete the writing.</sub_title1>
+    <sub_title2>Can we meet tomorrow?</sub_title2>
+  </sub>
+
+  <cd>
+    <body1>Lorem ipsum dolor sit amet, consectetuer
+      adipiscing elit, sed diam nonummy nibh euismod
+      tincidunt ut laoreet dolore magna aliquam erat 
+      volutpat. Ut wisi enim ad minim veniam, quis</body1>
+    <body2>nostrud exerci tation ullamcorper suscipit lobortis
+      nisl ut aliquip ex ea commodo consequat. Duis
+      autem vel eum iriure dolor in hendrerit in 
+      vulputate velit esse molestie conswquat, vel illum</body2>
+    <body3>dolore eu feugiat nulla facilisis at vero eros et 
+      accumsan et iusto odio dignissim qui blandit 
+      praesent luptatum zzril delenit augue duis dolore 
+      te feugait nulla facilisi.</body3>
+  </cd>
+
+  <end>Exercise Schedule</end>
+</paper>

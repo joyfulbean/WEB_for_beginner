@@ -1,0 +1,31 @@
+catalog {
+    background-color: rgb(79, 179, 179);
+    width: 100%;
+}
+cd {
+    display: block;
+    margin-bottom: 30pt;
+    margin-left: 0;
+    background-color: yellow;
+}
+title {
+    display: block;
+    font-size: 20pt;
+    margin-left: 30;
+    width: 50px;
+    text-shadow: 3px 3px 1px red; /* added */
+    color: blue
+}
+artist {
+    display: block;
+    background-color: indigo;
+    color: orange;
+    font-size: 20pt;
+    transform: skewX(30deg);
+}
+country, price, year, company {
+    display: block;
+    background-color: grey;
+    color: #000000;
+    margin-left: 20pt;
+}
