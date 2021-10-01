@@ -1,0 +1,120 @@
+papaer {
+    background-color: white;
+    width: 100%;
+}
+
+title {
+    font-size: 30pt;
+    color: black;
+    font-weight: bold;
+    font-family: verdana;
+    text-align: center;
+}
+
+running{
+    display: block;
+    font-size: 15pt;
+    font-weight: bold;
+    font-weight: verdana;
+    text-align: center;
+    color: blue;
+    margin-left: 30pt;
+    width: 300px;
+    background-color: yellow;
+    border:2px solid red;
+    padding:0.5em;
+    line-height: 1em;
+    border-radius:0.5em;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    margin-top: 20pt;
+}
+
+running:hover{
+    position: relative;
+    animation: mymove 5s infinite; 
+}
+@keyframes mymove {
+    0% {left: 0px;}
+    50% {left: 200px; color: red; background-color: rgb(168, 205, 112); border:2px solid green; }
+    100% {left: 0px;}
+}
+
+
+cd {
+    display: block;
+    margin-bottom: 30pt;
+    margin-top: 50pt;
+    font-size: 13pt;
+}
+
+cd::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+body1 {
+    display: block;
+    text-align: left;
+    color: blue;
+    background-color: lightgray;
+    border:5px solid red;
+    width: 130px;
+    height: 70pt;
+    margin-left: 50pt;
+    float: left;
+    transition: all ease 1s; 
+}
+
+body1:hover {
+    transform: rotate(360deg) scale( 2.0 );
+    background-color: lightblue;
+    color: red;
+    border:3px dotted blue;
+}
+
+body2 {
+    display: block;
+    text-align: center;
+    width: 300px;
+    height: 40pt;
+    color:blue;
+    background-color: lightgray;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    margin-right: 200pt;
+    float: right;
+    transition: all ease 1s; 
+}
+
+body2:hover{
+    position: relative;
+    animation: mymove 5s infinite; 
+}
+@keyframes mymove {
+    25%{
+        transform: sKewX(15deg);
+        border: 5px solid red;
+        background-color: lightgray;
+        color: blue;
+    }
+    50%{
+        transform: sKewX(15deg);
+        transform: rotate(-45deg);
+        border: 5px solid blue;
+        background-color: yellow;
+        color: red;
+    }
+    75%{
+        transform: sKewX(-15deg);
+        transform: rotate(45deg);
+        border: 5px solid blue;
+        background-color: yellow;
+        color: red;
+    }
+    100%{
+        transform: sKewX(-15deg);
+        border: 5px solid red;
+    }
+}
