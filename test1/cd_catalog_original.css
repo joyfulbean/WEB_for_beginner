@@ -1,0 +1,383 @@
+paper {
+    background-color: white;
+    width: 100%;
+}
+
+title {
+    font-size: 30pt;
+    color: blue;
+    font-weight: bold;
+    font-family: verdana;
+    text-align: left;
+}
+
+title:hover{
+    color: red;
+    background-color: yellow;
+    text-shadow: 3px 3px 1px green; 
+    text-align: center;
+    width: 130px;
+}
+
+schedule{
+    display: block;
+    font-size: 15pt;
+    color: cornflowerblue;
+    font-weight: bold;
+    font-weight: verdana;
+    text-align: right;
+    margin-right: 10pt;
+}
+
+schedule:hover{
+    transform: sKewX(15deg);
+    border: 3px dotted red;
+    background-color: yellow;
+    height: 130px;
+    color: black;
+}
+
+to{
+    display: block;
+    font-size: 15pt;
+    color: black;
+    font-weight: bold;
+    font-weight: verdana;
+    margin-left: 30pt;
+    margin-top: 30pt;
+    width: 130px;
+}
+
+to:hover {
+    transform: scale(1.5, 2.7);
+    font-size: 15pt;
+    text-align: center;
+    background-color: lightblue;
+    color: black;
+    border:2px solid blue;
+}
+
+phone:hover {
+    transform: translate( 200px, 50% ) scale(1.5) rotate(600deg);
+    background-color: lightgreen;
+    text-align: center;
+    color: black;
+}
+
+phone{
+    display: block;
+    font-size: 15pt;
+    color: black;
+    font-weight: bold;
+    font-weight: verdana;
+    margin-left: 30pt;
+    margin-bottom: 30pt;
+    background-color: yellow;
+    width: 130px;
+}
+
+
+from{
+    display: block;
+    font-size: 15pt;
+    color: black;
+    font-weight: bold;
+    font-weight: verdana;
+    margin-left: 30pt;
+    margin-bottom: 50pt;
+}
+from:hover{
+    transform: translate( 50px, 0px ) scale(2.0, 1.0);
+    background-color: lightblue;
+    width: 130px;
+}
+
+sub{
+    font-weight: bold;
+    font-weight: verdana;
+}
+
+sub::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+sub_title1{
+    display: block;
+    font-size: 20pt;
+    color: cornflowerblue;
+    background-color: gold;
+    margin-left: 30pt;
+    float: left;
+    width: 380px;
+    height: 40px;
+    transition: width 2s, height 2s, transform 2s; 
+}
+sub_title1:hover {
+    transform: rotate(360deg);
+    width: 200px;
+    height: 100px;
+    content: "Please, interprete the writing.";
+    color: red;
+    font-weight: bold;
+    background-color: lightgray;
+}
+
+
+sub_title2{
+    display: block;
+    font-size: 20pt;
+    font-style: italic;
+    color: darkorchid;
+    background-color: lightgray;
+    text-align: center; 
+    border: 2px solid darkmagenta;
+    float: right;
+    margin-right: 500pt;
+    box-shadow: 7px 7px 15px green;
+    width: 380px;
+    height: 40px;
+}
+sub_title2 {
+    position: relative;
+    animation: mymove 5s infinite; 
+}
+
+@keyframes mymove {
+    0% {left: 0px;}
+    50% {left: 200px; box-shadow: 7px 7px 15px rgb(107, 38, 121); }
+    100% {left: 0px;}
+}
+
+
+cd {
+    display: flex;
+    margin-bottom: 30pt;
+    margin-left: 30pt;
+    margin-top: 50pt;
+    text-align: center;
+    font-size: 13pt;
+
+}
+
+cd::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+body1 {
+    display: block;
+    color: #000000;
+    padding-left: 10pt;
+    padding-right: 20pt;
+    width: 450px;
+    height: 80pt;
+}
+
+
+body2 {
+    display: block;
+    width: 450px;
+    height: 80pt;
+    color: #000000;
+    border-left: 2px solid blue;
+    padding-left: 10pt;
+    padding-right: 20pt;
+}
+
+body3 {
+    display: block;
+    color: #000000;
+    width: 450px;
+    height: 80pt;
+    margin-right:30pt;
+    border-left: 2px solid blue;
+    padding-left: 10pt;
+    padding-right: 20pt;
+}
+
+
+title2 {
+    font-size: 30pt;
+    color: blue;
+    font-weight: bold;
+    font-family: verdana;
+    text-align: center;
+}
+
+
+title2:hover{
+    color: red;
+    background-color: yellow;
+    text-shadow: 3px 3px 1px green; 
+    text-align: center;
+    width: 130px;
+}
+
+
+running{
+    display: block;
+    font-size: 15pt;
+    font-weight: bold;
+    font-weight: verdana;
+    text-align: center;
+    color: blue;
+    margin-left: 30pt;
+    width: 300px;
+    background-color: yellow;
+    border:2px solid red;
+    padding:0.5em;
+    line-height: 1em;
+    border-radius:0.5em;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    margin-top: 20pt;
+}
+
+running:hover{
+    position: relative;
+    animation: mymove2 5s infinite; 
+}
+@keyframes mymove2 {
+    0% {left: 0px;}
+    50% {left: 200px; color: red; background-color: rgb(168, 205, 112); border:2px solid green; }
+    100% {left: 0px;}
+}
+
+
+cd2 {
+    display: block;
+    margin-bottom: 30pt;
+    margin-top: 50pt;
+    font-size: 13pt;
+}
+
+cd2::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+body2_1 {
+    display: block;
+    text-align: left;
+    color: blue;
+    background-color: lightgray;
+    border:5px solid green;
+    width: 130px;
+    height: 70pt;
+    margin-left: 50pt;
+    float: left;
+    transition: all ease 1s; 
+}
+
+body2_1:hover {
+    transform: rotate(360deg) scale( 2.0 );
+    background-color: lightblue;
+    color: red;
+    border:3px solid blue;
+    border-radius:0.5em;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    text-shadow: 3px 3px 1px green; 
+}
+
+body2_2 {
+    display: block;
+    text-align: center;
+    width: 300px;
+    height: 40pt;
+    color:blue;
+    background-color: lightgray;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    margin-right: 200pt;
+    float: right;
+    transition: all ease 1s; 
+}
+
+body2_2:hover{
+    position: relative;
+    animation: mymove3 5s infinite; 
+}
+@keyframes mymove3 {
+    25%{
+        transform: sKewX(15deg);
+        border: 5px solid red;
+        background-color: lightgray;
+        border-radius:0.5em;
+        -moz-border-radius: 0.5em;
+        -webkit-border-radius: 0.5em;
+        color: blue;
+    }
+    50%{
+        transform: sKewX(15deg);
+        transform: rotate(-45deg);
+        border: 5px solid blue;
+        background-color: yellow;
+        border-radius:0.5em;
+        -moz-border-radius: 0.5em;
+        -webkit-border-radius: 0.5em;
+        color: red;
+    }
+    75%{
+        transform: sKewX(-15deg);
+        transform: rotate(45deg);
+        border: 5px solid blue;
+        background-color: yellow;
+        border-radius:0.5em;
+        -moz-border-radius: 0.5em;
+        -webkit-border-radius: 0.5em;
+        color: red;
+    }
+    100%{
+        transform: sKewX(-15deg);
+        border: 5px solid red;
+    }
+}
+
+
+end{
+    clear: both;
+    font-size: 30pt;
+    color: blue;
+    font-weight: bold;
+    font-family: verdana;
+    text-align: left;
+}
+
+end:hover{
+    color: red;
+    background-color: yellow;
+    text-shadow: 3px 3px 1px green; 
+    text-align: center;
+    width: 130px;
+}
+
+news{
+    clear: both;
+    font-size: 15pt;
+    color: lightskyblue;
+    font-weight: bold;
+    font-family: verdana;
+    text-align: center;
+}
+
+news:hover{
+    color: black;
+    background-color: lightgray;
+    text-align: center; 
+    border: 2px solid blue;
+    width: 200px;
+    height: 100px;
+}
+
+symbol {
+    display: list-item;
+    list-style: url("/Users/yebin/Desktop/WEB/test1/task.png");
+}
+
+/*img*/
+/* https://nykim.work/86 */
