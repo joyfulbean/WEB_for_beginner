@@ -1,14 +1,17 @@
 paper {
     background-color: white;
-    width: 100%;
 }
 
 title {
+    display: block;
     font-size: 30pt;
     color: blue;
     font-weight: bold;
     font-family: verdana;
     text-align: left;
+    width: 500px;
+    transition-property: width, background-color;
+    transition-duration: 2s, 2s;
 }
 
 title:hover{
@@ -16,25 +19,42 @@ title:hover{
     background-color: yellow;
     text-shadow: 3px 3px 1px green; 
     text-align: center;
-    width: 130px;
+    width: 700px;
 }
 
 schedule{
     display: block;
+    position: absolute;
+    right: 0px;
     font-size: 15pt;
     color: cornflowerblue;
     font-weight: bold;
     font-weight: verdana;
     text-align: right;
-    margin-right: 10pt;
+    margin-right: 20pt;
+    width: 180px;
 }
 
 schedule:hover{
     transform: sKewX(15deg);
+    text-align: center;
     border: 3px dotted red;
     background-color: yellow;
-    height: 130px;
+    height: 50px;
     color: black;
+}
+
+schedule:hover::after {
+    display: block;
+    transform: sKewX(15deg) rotate(25deg);
+    margin-top: 30pt;
+    content: "Try to meet before noon.";
+    background-color: lightblue;
+    border-color: black;
+    border-style: dotted;
+    width: 150px;
+    height: 50px;
+    text-align: center;
 }
 
 to{
@@ -49,32 +69,38 @@ to{
 }
 
 to:hover {
-    transform: scale(1.5, 2.7);
+    transform: scale(1.2, 1.0);
     font-size: 15pt;
     text-align: center;
+    margin-top: 10pt;
     background-color: lightblue;
     color: black;
     border:2px solid blue;
+    text-align: center;
+    height: 30px;
+    padding:1.0em;
 }
 
-phone:hover {
-    transform: translate( 200px, 50% ) scale(1.5) rotate(600deg);
+to:hover::after {
+    transition: width 2s, height 2s, transform 2s; 
+    transform: translate( 200px, 50% ) scale(1.5) rotate(360deg);
     background-color: lightgreen;
     text-align: center;
     color: black;
 }
 
-phone{
+to::after {
+    content: "010-123-4567";
     display: block;
     font-size: 15pt;
     color: black;
     font-weight: bold;
     font-weight: verdana;
-    margin-left: 30pt;
     margin-bottom: 30pt;
     background-color: yellow;
     width: 130px;
 }
+
 
 
 from{
@@ -85,11 +111,16 @@ from{
     font-weight: verdana;
     margin-left: 30pt;
     margin-bottom: 50pt;
+    width: 200px;
+    height: 30px;
+    transition-property: width, background-color;
+    transition-duration: 2s, 2s;
+    text-align: center;
+    padding:1.0em;
 }
 from:hover{
-    transform: translate( 50px, 0px ) scale(2.0, 1.0);
     background-color: lightblue;
-    width: 130px;
+    width: 300px;
 }
 
 sub{
@@ -134,20 +165,25 @@ sub_title2{
     text-align: center; 
     border: 2px solid darkmagenta;
     float: right;
-    margin-right: 500pt;
+    margin-right: 450pt;
     box-shadow: 7px 7px 15px green;
     width: 380px;
     height: 40px;
 }
 sub_title2 {
     position: relative;
-    animation: mymove 5s infinite; 
+    animation: MoveUpDown 5s linear infinite;
+    left: 0;
+    bottom: 0;
 }
 
-@keyframes mymove {
-    0% {left: 0px;}
-    50% {left: 200px; box-shadow: 7px 7px 15px rgb(107, 38, 121); }
-    100% {left: 0px;}
+@keyframes MoveUpDown {
+    0%, 100% {
+        bottom: 0;
+      }
+      50% {
+        bottom: 100px;
+      }
 }
 
 
@@ -200,11 +236,15 @@ body3 {
 
 
 title2 {
+    display: block;
     font-size: 30pt;
     color: blue;
     font-weight: bold;
     font-family: verdana;
     text-align: center;
+    width: 600px;
+    transition-property: width, background-color;
+    transition-duration: 2s, 2s;
 }
 
 
@@ -213,7 +253,7 @@ title2:hover{
     background-color: yellow;
     text-shadow: 3px 3px 1px green; 
     text-align: center;
-    width: 130px;
+    width: 700px;
 }
 
 
@@ -307,9 +347,10 @@ body2_2:hover{
         transform: sKewX(15deg);
         border: 5px solid red;
         background-color: lightgray;
-        border-radius:0.5em;
-        -moz-border-radius: 0.5em;
-        -webkit-border-radius: 0.5em;
+        border-radius:2.0em;
+        -moz-border-radius: 2.0em;
+        -webkit-border-radius: 2.0em;
+        font-size: 21pt;
         color: blue;
     }
     50%{
@@ -317,9 +358,10 @@ body2_2:hover{
         transform: rotate(-45deg);
         border: 5px solid blue;
         background-color: yellow;
-        border-radius:0.5em;
-        -moz-border-radius: 0.5em;
-        -webkit-border-radius: 0.5em;
+        border-radius:2.0em;
+        -moz-border-radius: 2.0em;
+        -webkit-border-radius: 2.0em;
+        font-size: 21pt;
         color: red;
     }
     75%{
@@ -340,12 +382,16 @@ body2_2:hover{
 
 
 end{
+    display: block;
     clear: both;
     font-size: 30pt;
     color: blue;
     font-weight: bold;
     font-family: verdana;
     text-align: left;
+    width: 500px;
+    transition-property: width, background-color;
+    transition-duration: 2s, 2s;
 }
 
 end:hover{
@@ -353,31 +399,43 @@ end:hover{
     background-color: yellow;
     text-shadow: 3px 3px 1px green; 
     text-align: center;
-    width: 130px;
+    width: 600px;
 }
 
 news{
+    display: block;
     clear: both;
     font-size: 15pt;
     color: lightskyblue;
     font-weight: bold;
     font-family: verdana;
-    text-align: center;
+    text-align: left;
+    margin-top: 20pt;
+    margin-left: 30pt;
 }
 
 news:hover{
+    width: 200px;
+    height: 30px;
+    text-align: center; 
     color: black;
     background-color: lightgray;
-    text-align: center; 
-    border: 2px solid blue;
-    width: 200px;
-    height: 100px;
+    border: 3px blue solid;
 }
 
-symbol {
-    display: list-item;
-    list-style: url("/Users/yebin/Desktop/WEB/test1/task.png");
-}
 
-/*img*/
-/* https://nykim.work/86 */
+news:hover::after {
+    display: block;
+    position: absolute;
+    transform: sKewX(25deg) rotate(-10deg);
+    margin-top: 30pt;
+    content: "";
+    background-color: lightblue;
+    border-color: black;
+    border-style: dotted;
+    margin-left: 50pt;
+    width: 1000px;
+    height: 200px;
+    text-align: center;
+    background-image: url("./task.png");
+}

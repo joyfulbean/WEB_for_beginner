@@ -6,7 +6,6 @@
   <schedule> Meeting Schedule </schedule>
 
   <to>To: Eugene</to>
-  <phone>010-123-4567</phone>
   <from>From: Hong, Gil-Dong</from>
 
   <sub>
@@ -44,5 +43,4 @@
   
   <news>Main News</news>
 
-  <symbol>AAPL</symbol>
 </paper>
